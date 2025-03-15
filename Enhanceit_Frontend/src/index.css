@@ -1,0 +1,34 @@
+#root {
+    height: 100vh;
+}
+
+.caro-background {
+    background-color: "#fff";
+    background-image: repeating-linear-gradient(
+            45deg,
+            #f5f2fa 25%,
+            transparent 25%,
+            transparent 75%,
+            #f5f2fa 75%,
+            #f5f2fa
+        ),
+        repeating-linear-gradient(
+            45deg,
+            #f5f2fa 25%,
+            #fff 25%,
+            #fff 75%,
+            #f5f2fa 75%,
+            #f5f2fa
+        );
+    background-position: 0 0, 14px 14px;
+    background-size: 28px 28px;
+}
+
+.zoom-image {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-image:hover {
+    transform: scale(1.1);
+}
